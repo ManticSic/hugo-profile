@@ -18,8 +18,9 @@
         <div class="pr-lg-4">
           <div class="title mb-5">
             <h1 class="text-center mb-4">{{ .Title }}</h1>
+            {{ if .Params.siteDetails | default true }}
             <div class="text-center">
-              {{ .Params.author }} 
+              {{ .Params.author }}
               <small>|</small>
               {{ .Date.Format (.Site.Params.datesFormat.article | default "Jan 2, 2006") }}
 
@@ -29,6 +30,7 @@
               </span>
               {{ end }}
             </div>
+            {{ end }}
           </div>
           {{ if .Params.image }}
           <div class="featured-image">
@@ -127,8 +129,10 @@
   }
 </script>
 
+{{ if .Params.siteDetails | default true }}
 {{ if or (.Site.Params.singlePages.readTime.enable | default true) (.Params.enableReadingTime) }}
 <script src="{{.Site.Params.staticPath}}/js/readingTime.js"></script>
-{{end}}
+{{ end }}
+{{ end }}
 
 {{ end }}
