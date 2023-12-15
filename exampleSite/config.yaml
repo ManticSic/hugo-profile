@@ -127,7 +127,6 @@ params:
       enable: true
       name: "Resume"
       url: "#"
-      download: true
       newPage: false
     socialLinks:
       fontAwesomeIcons:
