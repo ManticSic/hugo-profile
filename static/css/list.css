@@ -2,16 +2,12 @@
     background-color: var(--secondary-color) !important;
     box-shadow: 0px 8px 56px rgba(15, 80, 100, 0.16);
     border-radius: .75rem;
-    cursor: context-menu;
     overflow: hidden;
     border: none;
 }
 
 #list-page .card a {
     text-decoration: none;
-}
-
-#list-page .card a h5 {
     color: var(--text-color) !important;
 }
 
@@ -76,4 +72,10 @@
     border-color: var(--primary-color);
     background-color: var(--primary-color) !important;
     color: var(--secondary-color) !important;
+}
+
+#list-page .badge {
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+    margin: 0 1%;
 }
