@@ -21,9 +21,9 @@
                     Hugo Profile
                 </a>
             </div>
-            {{ if .Site.Params.rev }}
+            {{ if and (.Site.Params.rev) (.Site.Params.siteRepository) }}
             <div class="rev text-secondary fw-lighter">
-                Revision: <span class="font-monospace">{{ .Site.Params.rev }}</span>
+                Revision: <a class="font-monospace" target="_blank" href="{{ .Site.Params.siteRepository }}/commit/{{ .Site.Params.rev }}">{{ .Site.Params.rev }}</a>
             </div>
             {{ end }}
         </div>
