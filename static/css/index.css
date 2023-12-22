@@ -132,7 +132,6 @@ header .navbar.animate {
 }
 
 #hero a.btn.social-icon {
-    color: var(--primary-color) !important;
     border-radius: 50%;
     padding: 0.7rem;
     width: 3rem;
@@ -149,8 +148,8 @@ header .navbar.animate {
 #hero a.btn {
     margin-top: 50px;
     padding: 0.7rem 1.75rem;
-    border: 1px solid var(--primary-color);
-    color: var(--text-color) !important;
+    border: 1px solid var(--text-secondary-color);
+    color: var(--text-secondary-color) !important;
     border-radius: .75rem;
     transition: none;
 }
@@ -160,13 +159,12 @@ header .navbar.animate {
 }
 
 #hero a.btn:hover {
-    background-color: var(--secondary-color) !important;
-    color: var(--text-color) !important;
-    opacity: 0.9;
+    /* background-color: var(--secondary-color) !important; */
+    color: var(--primary-color) !important;
+    border: 1px solid var(--primary-color);
 }
 
 #hero a.btn.social-icon:hover {
-    background-color: var(--background-color) !important;
     opacity: 0.7;
 }
 
@@ -523,16 +521,14 @@ header .navbar.animate {
 }
 
 #contact .btn {
-    transition: none;
-    transition: opacity 0.3s;
     border-radius: .5rem !important;
-    border-color: var(--primary-color) !important;
-    background-color: var(--secondary-color) !important;
-    color: var(--text-color) !important;
+    border-color: var(--text-secondary-color) !important;
+    color: var(--text-secondary-color) !important;
 }
 
 #contact .btn:hover {
-    opacity: .7;
+    border-color: var(--primary-color) !important;
+    color: var(--primary-color) !important;
 }
 
 #contact .btn:focus {

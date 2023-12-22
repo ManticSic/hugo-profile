@@ -25,7 +25,14 @@
 
 #projects .card a {
     text-decoration: none;
-    color: var(--text-color) !important;
+    color: var(--text-secondary-color) !important;
+    border-color: var(--text-secondary-color) !important;
+}
+
+#projects .card a:hover {
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    background-color: transparent !important;
 }
 
 #projects .card:hover {
